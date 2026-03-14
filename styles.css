@@ -79,6 +79,8 @@ a {
   align-items: center;
   justify-content: space-between;
   padding: 28px 6%;
+  border-bottom: 1px solid rgba(27, 36, 56, 0.08);
+  backdrop-filter: blur(6px);
 }
 
 .brand {
@@ -122,6 +124,10 @@ a {
   letter-spacing: 0.02em;
   line-height: 1.08;
   margin-bottom: 18px;
+}
+
+.hero__text h1 span {
+  display: block;
 }
 
 .eyebrow {
