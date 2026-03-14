@@ -1,0 +1,7 @@
+.DS_Store
+2026美国行程.docx
+*.JPG
+*.jpg
+*.png
+!assets/contact-qr.png
+!assets/mentor.jpg
