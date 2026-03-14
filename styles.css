@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Source+Sans+3:wght@400;600;700&display=swap');
 
 :root {
-  --bg: #0f172a;
-  --bg-soft: #111827;
-  --cream: #f8f6f1;
+  --bg: #f3f6fb;
+  --bg-soft: #eef3f9;
+  --cream: #fdfbf7;
   --gold: #caa35a;
-  --accent: #2dd4bf;
+  --accent: #24c1b4;
   --text: #0b0f1a;
-  --muted: #475569;
+  --muted: #4b5563;
   --line: #e2e8f0;
   --card: #ffffff;
-  --shadow: 0 20px 60px rgba(15, 23, 42, 0.15);
+  --shadow: 0 18px 48px rgba(15, 23, 42, 0.12);
 }
 
 * {
@@ -22,7 +22,7 @@
 body {
   font-family: 'Source Sans 3', sans-serif;
   color: var(--text);
-  background: var(--cream);
+  background: var(--bg);
   line-height: 1.6;
 }
 
@@ -51,9 +51,9 @@ a {
 .hero__bg {
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at 20% 20%, rgba(45, 212, 191, 0.2), transparent 55%),
-              radial-gradient(circle at 80% 10%, rgba(202, 163, 90, 0.25), transparent 40%),
-              linear-gradient(135deg, #0f172a 0%, #111827 55%, #1f2937 100%);
+  background: radial-gradient(circle at 20% 20%, rgba(36, 193, 180, 0.18), transparent 55%),
+              radial-gradient(circle at 80% 10%, rgba(202, 163, 90, 0.22), transparent 40%),
+              linear-gradient(135deg, #2b3655 0%, #364264 55%, #415074 100%);
   z-index: 0;
 }
 
@@ -67,25 +67,9 @@ a {
 }
 
 .brand {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  color: #fff;
-}
-
-.brand__logo {
-  width: 54px;
-  height: 54px;
-  object-fit: contain;
-  background: #fff;
-  border-radius: 12px;
-  padding: 6px;
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
-}
-
-.brand__text {
   display: grid;
   gap: 2px;
+  color: #fff;
 }
 
 .brand__name {
@@ -200,36 +184,36 @@ a {
 }
 
 .section--intro {
-  background: #fff;
+  background: var(--cream);
 }
 
 .section--overview {
-  background: linear-gradient(180deg, #ffffff 0%, #f5f2ea 100%);
+  background: linear-gradient(180deg, #ffffff 0%, #eef4f7 100%);
 }
 
 .section--topics {
-  background: #f8f7f4;
+  background: #f6f7fb;
 }
 
 .section--gallery {
-  background: #fff;
+  background: #ffffff;
 }
 
 .section--schedule {
-  background: #fff;
+  background: #fbfcff;
 }
 
 .section--mentor {
-  background: linear-gradient(135deg, #fdfcf8 0%, #f0f7f6 100%);
+  background: linear-gradient(135deg, #ffffff 0%, #eef6f5 100%);
 }
 
 .section--pricing {
-  background: #0f172a;
+  background: #1b2438;
   color: #fff;
 }
 
 .section--contact {
-  background: #fff;
+  background: #ffffff;
 }
 
 .grid-2 {
@@ -308,6 +292,12 @@ a {
   text-align: center;
 }
 
+.mentor__card img {
+  max-width: 230px;
+  margin: 0 auto;
+  border-radius: 14px;
+}
+
 .mentor__name {
   margin-top: 12px;
   font-weight: 600;
@@ -373,20 +363,33 @@ a {
   text-align: center;
 }
 
+.qr img {
+  max-width: 170px;
+  margin: 0 auto;
+}
+
 .qr__caption {
   margin-top: 10px;
   color: var(--muted);
 }
 
 .footer {
-  padding: 60px 0 80px;
-  background: #0b1120;
-  color: rgba(255, 255, 255, 0.85);
+  padding: 70px 0 90px;
+  background: #0f172a;
+  color: rgba(255, 255, 255, 0.86);
 }
 
 .footer__title {
+  font-family: 'Playfair Display', serif;
   font-weight: 700;
-  margin-bottom: 12px;
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+}
+
+.footer p {
+  max-width: 760px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.78);
 }
 
 .floating-cta {
