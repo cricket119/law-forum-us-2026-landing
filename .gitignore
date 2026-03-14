@@ -5,3 +5,5 @@
 *.png
 !assets/contact-qr.png
 !assets/mentor.jpg
+!assets/logo.png
+!assets/gallery-*.jpg

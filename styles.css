@@ -67,11 +67,37 @@ a {
 }
 
 .brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #fff;
+}
+
+.brand__logo {
+  width: 54px;
+  height: 54px;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 12px;
+  padding: 6px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+}
+
+.brand__text {
+  display: grid;
+  gap: 2px;
+}
+
+.brand__name {
   font-weight: 700;
+  font-size: 1rem;
+}
+
+.brand__sub {
+  font-size: 0.78rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  font-size: 0.85rem;
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 0.65);
 }
 
 .nav__cta {
@@ -168,6 +194,11 @@ a {
   margin-bottom: 18px;
 }
 
+.section__lead {
+  color: var(--muted);
+  margin-bottom: 24px;
+}
+
 .section--intro {
   background: #fff;
 }
@@ -178,6 +209,10 @@ a {
 
 .section--topics {
   background: #f8f7f4;
+}
+
+.section--gallery {
+  background: #fff;
 }
 
 .section--schedule {
@@ -211,6 +246,20 @@ a {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 20px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.12);
 }
 
 .card {
